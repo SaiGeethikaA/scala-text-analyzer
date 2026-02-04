@@ -1,4 +1,3 @@
-
 package com.saigeethika.analyzer
 
 /**
@@ -10,6 +9,19 @@ package com.saigeethika.analyzer
 object TextAnalyzerApp {
 
   def main(args: Array[String]): Unit = {
+    // Java version check
+    val javaVersion = System.getProperty("java.version")
+    val majorVersion = try {
+      val parts = javaVersion.split("[.]")
+      if (parts(0) == "1" && parts.length > 1) parts(1).toInt
+      else parts(0).toInt
+    } catch {
+      case _: Throwable => 0
+    }
+    if (majorVersion < 17) {
+      println(s"ERROR: Java 17+ is required. Detected version: $javaVersion")
+      System.exit(1)
+    }
 
     val bookUrl =
       if (args.nonEmpty) args(0)
