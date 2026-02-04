@@ -1,0 +1,40 @@
+# Scala / SBT
+target/
+project/target/
+project/project/
+lib_managed/
+src_managed/
+artifacts/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# SBT/Bloop/Metals
+.bloop/
+.metals/
+.cache/
+
+# Build artifacts
+*.class
+*.jar
+
+# Temporary files
+*.tmp
+
+# Generated test reports
+test-reports/
+target/
+.metals/
+.bsp/
+.idea/
