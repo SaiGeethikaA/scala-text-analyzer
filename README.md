@@ -35,7 +35,6 @@ that performs text analysis on a remote file.
 - Clear separation of concerns
 - Custom exceptions
 - Unit tests
-- Interview-friendly design
 
 ## Run
 sbt run
